@@ -21,7 +21,7 @@ endif()
 if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
 	# We are the top-level project
 	option(LUABIND_INSTALL "Install the LuaBind library and headers" ON)
-	option(LUABIND_BUILD_SHARED "Build luabind as a shared library?" OFF)
+	option(LUABIND_BUILD_SHARED "Build luabind as a shared library?" ON)
 	include(CTest)
 endif()
 
