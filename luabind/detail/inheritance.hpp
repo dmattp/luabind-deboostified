@@ -19,7 +19,7 @@ namespace luabind {
 		using cast_function = void*(*)(void*);
 		using class_id      = std::size_t;
 
-		constexpr class_id unknown_class = std::numeric_limits<class_id>::max();
+		constexpr class_id unknown_class = (std::numeric_limits<class_id>::max)();
 
 		class class_rep;
 
